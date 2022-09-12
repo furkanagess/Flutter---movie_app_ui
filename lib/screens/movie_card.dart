@@ -56,6 +56,7 @@ class MovieCard extends StatelessWidget {
           ),
         ),
         Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset(
               "assets/icons/star_fill.svg",

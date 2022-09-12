@@ -17,7 +17,7 @@ class plotContent extends StatelessWidget {
       child: Text(
         movie.plot,
         style: TextStyle(
-          color: Color(0xFF737599),
+          color: Color.fromARGB(255, 30, 32, 59),
         ),
       ),
     );
@@ -33,7 +33,7 @@ class plotWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-          vertical: kDefaultPadding / 2, horizontal: kDefaultPadding / 2),
+          vertical: kDefaultPadding / 2, horizontal: kDefaultPadding / 1.2),
       child: Text(
         "Plot Summary",
         style: Theme.of(context).textTheme.headline5,

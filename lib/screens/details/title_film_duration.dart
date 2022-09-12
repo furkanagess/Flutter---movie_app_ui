@@ -13,6 +13,7 @@ class titleFilm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.all(kDefaultPadding),
       child: Row(
@@ -47,7 +48,7 @@ class titleFilm extends StatelessWidget {
                       width: kDefaultPadding,
                     ),
                     Text(
-                      "2h 41min",
+                      "2h 12min",
                       style: TextStyle(color: kTextLightColor),
                     ),
                   ],
@@ -56,8 +57,8 @@ class titleFilm extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 64,
-            width: 64,
+            height: size.height * 0.08,
+            width: size.width * 0.18,
             child: ElevatedButton(
               onPressed: () {},
               style: ElevatedButton.styleFrom(

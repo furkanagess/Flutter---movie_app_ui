@@ -8,6 +8,7 @@ class CastAndCrew extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.all(kDefaultPadding),
       child: Column(
@@ -19,7 +20,7 @@ class CastAndCrew extends StatelessWidget {
           ),
           SizedBox(height: kDefaultPadding),
           SizedBox(
-            height: 140,
+            height: size.height * 0.17,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: casts.length,
@@ -40,14 +41,15 @@ class Cast extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Expanded(
       child: Container(
         margin: EdgeInsets.only(right: kDefaultPadding),
-        width: 80,
+        width: size.width * 0.2,
         child: Column(
           children: [
             Container(
-              height: 70,
+              height: size.height * 0.08,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(

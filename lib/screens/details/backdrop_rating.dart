@@ -37,7 +37,7 @@ class backdropRatingWidget extends StatelessWidget {
             right: 0,
             child: Container(
               width: size.width * 0.9,
-              height: 100,
+              height: size.height * 0.12,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
@@ -95,11 +95,11 @@ class backdropRatingWidget extends StatelessWidget {
                     children: [
                       Icon(
                         Icons.star_outline,
-                        size: 55,
+                        size: 50,
                         color: Colors.amber,
                       ),
                       SizedBox(
-                        height: size.height * 0.02,
+                        height: size.height * 0.022,
                       ),
                       Text(
                         "Rate This",
@@ -147,7 +147,11 @@ class backdropRatingWidget extends StatelessWidget {
               ),
             ),
           ),
-          SafeArea(child: BackButton()),
+          SafeArea(
+            child: BackButton(
+              color: Colors.white,
+            ),
+          ),
         ],
       ),
     );

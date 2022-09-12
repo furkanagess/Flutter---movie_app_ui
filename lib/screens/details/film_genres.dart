@@ -14,16 +14,18 @@ class filmGenres extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Padding(
       padding: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
       child: SizedBox(
-        height: 36,
+        height: size.height * 0.05,
         child: ListView.builder(
-            scrollDirection: Axis.horizontal,
-            itemCount: movie.genra.length,
-            itemBuilder: (context, index) => GenreCard(
-                  genre: movie.genra[index],
-                )),
+          scrollDirection: Axis.horizontal,
+          itemCount: movie.genra.length,
+          itemBuilder: (context, index) => GenreCard(
+            genre: movie.genra[index],
+          ),
+        ),
       ),
     );
   }
