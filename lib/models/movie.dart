@@ -36,22 +36,22 @@ List<Movie> movies = [
     plot: plotText,
     cast: [
       {
-        "orginalName": "James Mangold",
+        "originalName": "James Mangold",
         "movieName": "Director",
         "image": "assets/images/actor1.jpg",
       },
       {
-        "orginalName": "Matt Damon",
+        "originalName": "Matt Damon",
         "movieName": "Carroll",
         "image": "assets/images/actor2.jpg",
       },
       {
-        "orginalName": "Christian Bale",
+        "originalName": "Christian Bale",
         "movieName": "Ken Miles",
         "image": "assets/images/actor3.jpg",
       },
       {
-        "orginalName": "Caitriona Balfe",
+        "originalName": "Caitriona Balfe",
         "movieName": "Mollie",
         "image": "assets/images/actor4.jpg",
       },
@@ -71,29 +71,29 @@ List<Movie> movies = [
     plot: plotText,
     cast: [
       {
-        "orginalName": "James Mangold",
+        "originalName": "James Mangold",
         "movieName": "Director",
         "image": "assets/images/actor1.jpg",
       },
       {
-        "orginalName": "Matt Damon",
+        "originalName": "Matt Damon",
         "movieName": "Carroll",
         "image": "assets/images/actor2.jpg",
       },
       {
-        "orginalName": "Christian Bale",
+        "originalName": "Christian Bale",
         "movieName": "Ken Miles",
         "image": "assets/images/actor3.jpg",
       },
       {
-        "orginalName": "Caitriona Balfe",
+        "originalName": "Caitriona Balfe",
         "movieName": "Mollie",
         "image": "assets/images/actor4.jpg",
       },
     ],
   ),
   Movie(
-    id: 1,
+    id: 3,
     title: "Onward",
     year: 2020,
     poster: "assets/images/portrait.jpg",
@@ -106,22 +106,22 @@ List<Movie> movies = [
     plot: plotText,
     cast: [
       {
-        "orginalName": "James Mangold",
+        "originalName": "James Mangold",
         "movieName": "Director",
         "image": "assets/images/actor1.jpg",
       },
       {
-        "orginalName": "Matt Damon",
+        "originalName": "Matt Damon",
         "movieName": "Carroll",
         "image": "assets/images/actor2.jpg",
       },
       {
-        "orginalName": "Christian Bale",
+        "originalName": "Christian Bale",
         "movieName": "Ken Miles",
         "image": "assets/images/actor3.jpg",
       },
       {
-        "orginalName": "Caitriona Balfe",
+        "originalName": "Caitrioa Balfe",
         "movieName": "Mollie",
         "image": "assets/images/actor4.jpg",
       },

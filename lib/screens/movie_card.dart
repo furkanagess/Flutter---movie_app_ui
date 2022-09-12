@@ -25,48 +25,52 @@ class MovieCard extends StatelessWidget {
             ),
           );
         },
-        child: Column(
+        child: buildMovieCard(context),
+      ),
+    );
+  }
+
+  Column buildMovieCard(BuildContext context) {
+    return Column(
+      children: [
+        Expanded(
+          child: Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              boxShadow: [kDefaultShadow],
+              image: DecorationImage(
+                fit: BoxFit.fill,
+                image: AssetImage(movie.poster),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
+          child: Text(
+            movie.title,
+            style: Theme.of(context)
+                .textTheme
+                .headline5!
+                .copyWith(fontWeight: FontWeight.w600),
+          ),
+        ),
+        Row(
           children: [
-            Expanded(
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: [kDefaultShadow],
-                  image: DecorationImage(
-                    fit: BoxFit.fill,
-                    image: AssetImage(movie.poster),
-                  ),
-                ),
-              ),
+            SvgPicture.asset(
+              "assets/icons/star_fill.svg",
+              height: 20,
             ),
-            Padding(
-              padding: EdgeInsets.symmetric(vertical: kDefaultPadding / 2),
-              child: Text(
-                movie.title,
-                style: Theme.of(context)
-                    .textTheme
-                    .headline5!
-                    .copyWith(fontWeight: FontWeight.w600),
-              ),
+            SizedBox(
+              width: kDefaultPadding / 2,
             ),
-            Row(
-              children: [
-                SvgPicture.asset(
-                  "assets/icons/star_fill.svg",
-                  height: 20,
-                ),
-                SizedBox(
-                  width: kDefaultPadding / 2,
-                ),
-                Text(
-                  "${movie.rating}",
-                  style: Theme.of(context).textTheme.bodyText2,
-                ),
-              ],
+            Text(
+              "${movie.rating}",
+              style: Theme.of(context).textTheme.bodyText2,
             ),
           ],
         ),
-      ),
+      ],
     );
   }
 }

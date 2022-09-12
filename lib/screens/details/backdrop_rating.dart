@@ -58,7 +58,11 @@ class backdropRatingWidget extends StatelessWidget {
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SvgPicture.asset("assets/icons/star_fill.svg"),
+                      Icon(
+                        Icons.star,
+                        size: 50,
+                        color: Colors.amber,
+                      ),
                       SizedBox(
                         height: kDefaultPadding / 4,
                       ),
@@ -69,15 +73,14 @@ class backdropRatingWidget extends StatelessWidget {
                           ),
                           children: [
                             TextSpan(
-                              text: "${movie.rating}/",
+                              text: " ${movie.rating} / ",
                               style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 12,
                                 fontWeight: FontWeight.w600,
                               ),
                             ),
                             TextSpan(
-                              text: "10\n",
-                            ),
+                                text: "10\n", style: TextStyle(fontSize: 12)),
                             TextSpan(
                               text: "150,231",
                               style: TextStyle(color: kTextLightColor),
@@ -88,10 +91,15 @@ class backdropRatingWidget extends StatelessWidget {
                     ],
                   ),
                   Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      SvgPicture.asset("assets/icons/star.svg"),
+                      Icon(
+                        Icons.star_outline,
+                        size: 55,
+                        color: Colors.amber,
+                      ),
                       SizedBox(
-                        height: kDefaultPadding / 4,
+                        height: size.height * 0.02,
                       ),
                       Text(
                         "Rate This",
